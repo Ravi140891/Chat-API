@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const DB = "mongodb+srv://Ravi1408:hJsKwVDCc9OQQbaI@cluster0.rg3mox3.mongodb.net/message?retryWrites=true&w=majority";
+const DB = process.env.SECRET_Key;
 
 mongoose.set("strictQuery", true);
 mongoose.connect(DB).then(() => {
